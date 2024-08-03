@@ -4,6 +4,7 @@ git
 neofetch
 neomutt
 tmux
+ncal
 net-tools
 nmap
 nala
