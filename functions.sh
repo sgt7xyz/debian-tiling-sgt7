@@ -3,9 +3,9 @@
 # 1 
 backup_configs() {
   mkdir ~/.config-backups
-  cp -p ~/.bashrc ~/.config-backups
-  cp -p ~/.profile ~/.config-backups
-  cp -p ~/.bash_logout ~/.config-backups
+  cp ~/.bashrc ~/.config-backups
+  cp ~/.profile ~/.config-backups
+  cp ~/.bash_logout ~/.config-backups
 }
 
 update_debian() {
@@ -130,7 +130,7 @@ configure_swappiness() {
 
 # 11
 speed_boot_time() {
-    sudo cp -p /etc/default/grub /etc/default/grub.original
+    sudo cp /etc/default/grub /etc/default/grub.original
     sudo sed -i 's/GRUB_TIMEOUT=5/GRUB_TIMEOUT=0/g' /etc/default/grub
     sudo update-grub
     sudo grep GRUB_TIMEOUT /etc/default/grub
@@ -156,9 +156,11 @@ install_vscode() {
 
 # 13
 configure_git() {
+    cp configs/.gitignore_global ~/
     git config --global init.defaultBranch main
     git config --global color.ui auto
     git config --global core.editor vim
     git config --global pull.rebase false
+    git config --global core.excludesfile ~/.gitignore_global
     echo 'Base configuration for Git completed. Ensure you set your username and email!'
 }
