@@ -64,6 +64,7 @@ terraform.rc
 
 # Vagrant files
 .vagrant/*
+*.box
 
 #Exclude personal scratch files
 scratch.txt
