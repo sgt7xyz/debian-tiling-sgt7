@@ -48,3 +48,4 @@ ranger
 fonts-liberation
 libu2f-udev
 pavucontrol
+cmatrix
