@@ -82,7 +82,9 @@ customize_tiling() {
     #cp configs/polybar/launch.sh ~/.config/polybar/launch.sh
     #cp configs/rofi/config.rasi ~/.config/rofi/config.rasi
     #cp configs/rofi/catppuccin-macchiato.rasi ~/.config/rofi/catppuccin-macchiato.rasi
-
+    cp scripts/down_volume.sh ~/scripts/down_volume.sh
+    cp scripts/up_volume.sh ~/scripts/up_volume.sh
+    
     #echo "" > ~/.Xresources
     #echo "" >> ~/.Xresources
     #echo "" >> ~/.Xresources
